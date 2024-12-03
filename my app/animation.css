@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .letter, .text {
+    color: white;
+    opacity: 0;
+    filter: blur(4px);
+    animation: fadeIn 2.5s ease-in-out forwards;
+  }
+  
+  .letter {
+    animation-delay: calc(var(--index) * 0.5s);
+  }
+  
+  .text {
+    animation-delay: 2.5s;
+    margin-left: 10px;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      filter: blur(4px);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  
