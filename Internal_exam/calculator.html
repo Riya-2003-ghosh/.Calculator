@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" readonly>
+    <div class="buttons">
+      <button onclick="clearDisplay()">AC</button>
+      <button onclick="backspace()">⌫</button>
+      <button onclick="insert('(')">(</button>
+      <button onclick="insert(')')">)</button>
+      <button onclick="insert('7')">7</button>
+      <button onclick="insert('8')">8</button>
+      <button onclick="insert('9')">9</button>
+      <button onclick="insert('/')">÷</button>
+      <button onclick="insert('4')">4</button>
+      <button onclick="insert('5')">5</button>
+      <button onclick="insert('6')">6</button>
+      <button onclick="insert('*')">×</button>
+      <button onclick="insert('1')">1</button>
+      <button onclick="insert('2')">2</button>
+      <button onclick="insert('3')">3</button>
+      <button onclick="insert('-')">−</button>
+      <button onclick="insert('0')">0</button>
+      <button onclick="insert('.')">.</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="insert('+')">+</button>
+      <button onclick="insert('Math.sqrt(')">√</button>
+      <button onclick="insert('Math.pow(')">xʸ</button>
+      <button onclick="insert('Math.sin(')">sin</button>
+      <button onclick="insert('Math.cos(')">cos</button>
+      <button onclick="insert('Math.tan(')">tan</button>
+      <button onclick="insert('Math.log(')">ln</button>
+      <button onclick="insert('Math.exp(')">eˣ</button>
+      <button onclick="insert('Math.PI')">π</button>
+      <button onclick="insert('log(')">log</button>
+      <button onclick="insert('^')">^</button>
+      <button onclick="insert('e')">e</button>
+      <button onclick="insert('degree')">deg</button>
+    </div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>
